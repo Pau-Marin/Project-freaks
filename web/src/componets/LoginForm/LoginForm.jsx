@@ -1,15 +1,14 @@
 import React, { useState } from "react"
+import { Link } from "react-router-dom"
 
 const LoginForm = () => {
-  const [name, setName] = useState("")
-  const [password, setPassword] = useState("")
   const [email, setEmail] = useState("")
-  const [birthday, setBirthday] = useState("")
+  const [password, setPassword] = useState("")
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    // Aquí puedes hacer una llamada a una función para enviar estos datos al servidor o realizar otra acción
-    console.log(name, password, email, birthday)
+    // You can make a call to a function here to send these data to the server or perform some other action
+    console.log(email, password)
   }
 
   return (
@@ -17,11 +16,11 @@ const LoginForm = () => {
       <h2>LOG IN</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Nick:
+          Email:
           <input
-            type="text"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
+            type="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
           />
         </label>
         <br />
@@ -34,25 +33,9 @@ const LoginForm = () => {
           />
         </label>
         <br />
-        <label>
-          Email:
-          <input
-            type="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-          />
-        </label>
+        <button type="submit">Log In</button>
         <br />
-        <label>
-          BirthDay:
-          <input
-            type="date"
-            value={birthday}
-            onChange={(event) => setBirthday(event.target.value)}
-          />
-        </label>
-        <br />
-        <button type="submit">Iniciar sesión</button>
+        <Link to="/register">Don't have an account? Register here.</Link>
       </form>
     </div>
   )
