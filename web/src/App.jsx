@@ -1,17 +1,18 @@
-import "./App.css"
 import { Route, Routes } from "react-router-dom"
-import LoginForm from "./componets/LoginForm/LoginForm"
-import RegisterForm from "./componets/RegisterForm/RegisterForm"
+import Home from "./components/Home/Home"
+import LoginForm from "./components/LoginForm/LoginForm"
+import Movies from "./components/Movies/Movies"
+import RegisterForm from "./components/RegisterForm/RegisterForm"
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/login" element={<LoginForm />} />
-        <Route exact path="/register" element={<RegisterForm />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/movies" element={<Movies />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/register" element={<RegisterForm />} />
       </Routes>
     </div>
   )
 }
-
-export default App
