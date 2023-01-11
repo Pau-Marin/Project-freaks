@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import Link from "next/link"
 
 export default function index() {
   const [email, setEmail] = useState("")
@@ -35,7 +35,7 @@ export default function index() {
         <br />
         <button type="submit">Log In</button>
         <br />
-        <Link to="/register">Don't have an account? Register here.</Link>
+        <Link href="/register">Don't have an account? Register here.</Link>
       </form>
     </div>
   )
