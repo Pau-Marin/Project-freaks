@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function HomePage() {
   return (
     <div>
@@ -15,6 +17,7 @@ export default function HomePage() {
         quam. Praesent nec suscipit neque. Vestibulum mattis magna urna, sed
         dapibus ex elementum eu.
       </p>
+      <Link href="/test">Test Page</Link>
     </div>
   )
 }
