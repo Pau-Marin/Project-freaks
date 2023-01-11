@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "password": "abc123",
+      "email": "john@example.com",
+      "birthDate": "1990-01-01",
+      "registerDate": "2022-05-20",
+      "bookName": ["programming", "music", "travel"]
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "password": "xyz456",
+      "email": "jane@example.com",
+      "birthDate": "1995-03-15",
+      "registerDate": "2022-08-10",
+      "bookName": ["art", "fitness", "cooking"]
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "password": "bob12345",
+      "email": "bob@example.com",
+      "birthDate": "1985-07-20",
+      "registerDate": "2022-01-01",
+      "bookName": ["tech", "outdoor sports", "politics"]
+    },
+    {
+      "id": 4,
+      "name": "Alice Williams",
+      "password": "aliceabc",
+      "email": "alice@example.com",
+      "birthDate": "1988-09-12",
+      "registerDate": "2022-03-01",
+      "bookName": ["teaching", "health", "history"]
+    },
+    {
+      "id": 5,
+      "name": "Mike Brown",
+      "password": "mike12345",
+      "email": "mike@example.com",
+      "birthDate": "1987-02-28",
+      "registerDate": "2022-02-15",
+      "bookName": ["sports", "music", "reading"]
+    },
+    {
+      "id": 6,
+      "name": "Emily Davis",
+      "password": "emily456",
+      "email": "emily@example.com",
+      "birthDate": "1992-05-20",
+      "registerDate": "2022-07-01",
+      "bookName": ["writing", "gardening", "pets"]
+    },
+    {
+      "id": 7,
+      "name": "William Thompson",
+      "password": "will12345",
+      "email": "will@example.com",
+      "birthDate": "1980-11-12",
+      "registerDate": "2022-06-01",
+      "bookName": ["finance", "cars", "technology"]
+    },
+    {
+      "id": 8,
+      "name": "Ashley Johnson",
+      "password": "ashleyabc",
+      "email": "ashley@example.com",
+      "birthDate": "1995-01-01",
+      "registerDate": "2022-04-20",
+      "bookName": ["art", "photography", "fashion"]
+    }
+  ]
+}
